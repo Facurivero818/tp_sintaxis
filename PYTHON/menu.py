@@ -14,13 +14,13 @@ menu = """
 """
 
 def pause():
-    input("\nPRESIONE UNA TECLA PARA CONTINUAR")
+    return input("\nPRESIONE UNA TECLA PARA CONTINUAR")
 
 def limpiar_terminal():
     if os.name == "nt":  #WINDOWS
-        os.system("cls")
+        return os.system("cls")
     else:  # LINUX
-        os.system("clear")
+        return os.system("clear")
 
 
 flag = True
